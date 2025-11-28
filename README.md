@@ -1,6 +1,6 @@
 # Crypto Tips - Web3 Tipping Platform
 
-A decentralized tipping platform built on Web3 technology, allowing content creators to receive cryptocurrency tips from their supporters.
+A decentralized tipping platform built on Web3 technology, allowing content creators to receive cryptocurrency tips from their supporters.1
 
 ## Features
 
@@ -13,18 +13,21 @@ A decentralized tipping platform built on Web3 technology, allowing content crea
 ## Tech Stack
 
 ### Frontend
+
 - React 18 + TypeScript
 - Vite (Build tool)
 - Tailwind CSS (Styling)
 - ethers.js (Web3 integration)
 
 ### Backend
+
 - Node.js + Express + TypeScript
 - Prisma (ORM)
 - SQLite (Database)
 - JWT (Authentication)
 
 ### Blockchain
+
 - Ethereum (Sepolia testnet)
 - MetaMask wallet integration
 
@@ -41,6 +44,7 @@ crypto-tips/
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js 18+
 - MetaMask browser extension
 - Git
@@ -48,24 +52,28 @@ crypto-tips/
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/yourusername/crypto-tips.git
 cd crypto-tips
 ```
 
 2. Install frontend dependencies:
+
 ```bash
 cd frontend
 npm install
 ```
 
 3. Install backend dependencies:
+
 ```bash
 cd backend
 npm install
 ```
 
 4. Set up environment variables:
+
 ```bash
 # Backend (.env)
 DATABASE_URL="file:./dev.db"
@@ -74,12 +82,14 @@ PORT=3000
 ```
 
 5. Initialize database:
+
 ```bash
 cd backend
 npx prisma migrate dev
 ```
 
 6. Run the application:
+
 ```bash
 # Terminal 1 - Backend
 cd backend
@@ -93,6 +103,7 @@ npm run dev
 ## Usage
 
 1. **For Creators**:
+
    - Connect your MetaMask wallet
    - Create your profile page
    - Share your unique tipping link

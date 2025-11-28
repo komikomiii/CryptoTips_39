@@ -1,150 +1,157 @@
-# Crypto Tips - Web3 Tipping Platform
+# Crypto Tips - Web3 加密货币打赏平台
 
-A decentralized tipping platform built on Web3 technology, allowing content creators to receive cryptocurrency tips from their supporters.1
+一个基于 Web3 技术构建的去中心化打赏平台，让内容创作者能够从支持者那里接收加密货币打赏。
 
-## Features
+## 项目特点
 
-- **Web3 Integration**: Connect with MetaMask wallet for secure transactions
-- **Easy Tipping**: Send ETH/USDT tips with just a few clicks
-- **Creator Pages**: Personalized tipping pages for each creator
-- **Tip History**: Track all tips sent and received
-- **Social Sharing**: Share your tipping page via QR code or link
+- **Web3 集成**: 通过 MetaMask 钱包进行安全交易
+- **便捷打赏**: 只需几次点击即可发送 ETH/USDT 打赏
+- **创作者主页**: 为每位创作者提供个性化打赏页面
+- **打赏历史**: 追踪所有发送和接收的打赏记录
+- **社交分享**: 通过二维码或链接分享您的打赏页面
 
-## Tech Stack
+## 技术栈
 
-### Frontend
+### 前端
 
 - React 18 + TypeScript
-- Vite (Build tool)
-- Tailwind CSS (Styling)
-- ethers.js (Web3 integration)
+- Vite (构建工具)
+- Tailwind CSS (样式框架)
+- ethers.js (Web3 集成)
 
-### Backend
+### 后端
 
 - Node.js + Express + TypeScript
 - Prisma (ORM)
-- SQLite (Database)
-- JWT (Authentication)
+- SQLite (数据库)
+- JWT (身份认证)
 
-### Blockchain
+### 区块链
 
-- Ethereum (Sepolia testnet)
-- MetaMask wallet integration
+- Ethereum (Sepolia 测试网)
+- MetaMask 钱包集成
 
-## Project Structure
+## 项目结构
 
 ```
 crypto-tips/
-├── frontend/          # React frontend application
-├── backend/           # Node.js backend API
-├── docs/              # Documentation and analysis
+├── frontend/          # React 前端应用
+├── backend/           # Node.js 后端 API
+├── docs/              # 文档和分析
 └── README.md
 ```
 
-## Getting Started
+## 快速开始
 
-### Prerequisites
+### 环境要求
 
 - Node.js 18+
-- MetaMask browser extension
+- MetaMask 浏览器扩展
 - Git
 
-### Installation
+### 安装步骤
 
-1. Clone the repository:
+1. 克隆仓库：
 
 ```bash
-git clone https://github.com/yourusername/crypto-tips.git
-cd crypto-tips
+git clone https://github.com/komikomiii/CryptoTips_39.git
+cd CryptoTips_39
 ```
 
-2. Install frontend dependencies:
+2. 安装前端依赖：
 
 ```bash
 cd frontend
 npm install
 ```
 
-3. Install backend dependencies:
+3. 安装后端依赖：
 
 ```bash
 cd backend
 npm install
 ```
 
-4. Set up environment variables:
+4. 配置环境变量：
 
 ```bash
-# Backend (.env)
+# 后端 (.env)
 DATABASE_URL="file:./dev.db"
 JWT_SECRET="your-secret-key"
 PORT=3000
 ```
 
-5. Initialize database:
+5. 初始化数据库：
 
 ```bash
 cd backend
 npx prisma migrate dev
 ```
 
-6. Run the application:
+6. 运行应用：
 
 ```bash
-# Terminal 1 - Backend
+# 终端 1 - 后端
 cd backend
 npm run dev
 
-# Terminal 2 - Frontend
+# 终端 2 - 前端
 cd frontend
 npm run dev
 ```
 
-## Usage
+## 使用说明
 
-1. **For Creators**:
+### 对于创作者
 
-   - Connect your MetaMask wallet
-   - Create your profile page
-   - Share your unique tipping link
+1. 连接您的 MetaMask 钱包
+2. 创建您的个人资料页面
+3. 分享您的专属打赏链接
 
-2. **For Supporters**:
-   - Visit a creator's tipping page
-   - Connect your wallet
-   - Send a tip with an optional message
+### 对于支持者
 
-## Development Roadmap
+1. 访问创作者的打赏页面
+2. 连接您的钱包
+3. 发送打赏并附上留言（可选）
 
-- [x] Project initialization
-- [ ] User authentication system
-- [ ] Creator profile management
-- [ ] MetaMask wallet integration
-- [ ] Tipping functionality
-- [ ] Transaction history
-- [ ] QR code generation
-- [ ] Social sharing features
-- [ ] Dashboard analytics
+## 开发路线图
 
-## Contributing
+- [x] 项目初始化
+- [ ] 用户认证系统
+- [ ] 创作者资料管理
+- [ ] MetaMask 钱包集成
+- [ ] 打赏功能
+- [ ] 交易历史记录
+- [ ] 二维码生成
+- [ ] 社交分享功能
+- [ ] 数据分析仪表板
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+## 贡献指南
 
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+欢迎贡献代码！请随时提交 Pull Request。
 
-## License
+1. Fork 本项目
+2. 创建您的功能分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交您的更改 (`git commit -m '添加某个功能'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 开启一个 Pull Request
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 许可证
 
-## Contact
+本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
 
-Project Link: [https://github.com/yourusername/crypto-tips](https://github.com/yourusername/crypto-tips)
+## 联系方式
 
-## Acknowledgments
+项目链接: [https://github.com/komikomiii/CryptoTips_39](https://github.com/komikomiii/CryptoTips_39)
 
-- Built as a course project exploring Web3 technologies
-- Inspired by platforms like Ko-fi and Buy Me a Coffee
-- Special thanks to the Ethereum and Web3 community
+## 致谢
+
+- 本项目作为 Web3 技术探索的课程项目
+- 灵感来源于 Ko-fi 和 Buy Me a Coffee 等平台
+- 特别感谢以太坊和 Web3 社区
+
+## 相关文档
+
+- [五看三定分析](docs/五看三定分析.md) - 项目战略分析
+- [开发指南](docs/开发指南.md) - 详细的开发文档
+- [部署指南](docs/部署指南.md) - 生产环境部署说明

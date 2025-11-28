@@ -1,0 +1,37 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model User {
+  id            String   @id @default(uuid())
+  username      String   @unique
+  walletAddress String   @unique
+  displayName   String?
+  bio           String?
+  avatarUrl     String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  tipsReceived  Tip[]    @relation("TipRecipient")
+  tipsSent      Tip[]    @relation("TipSender")
+}
+
+model Tip {
+  id          String   @id @default(uuid())
+  fromAddress String
+  toAddress   String
+  amount      String   // Store as string to handle big numbers
+  message     String?
+  txHash      String   @unique
+  createdAt   DateTime @default(now())
+
+  fromUser    User?    @relation("TipSender", fields: [fromAddress], references: [walletAddress])
+  toUser      User?    @relation("TipRecipient", fields: [toAddress], references: [walletAddress])
+}
